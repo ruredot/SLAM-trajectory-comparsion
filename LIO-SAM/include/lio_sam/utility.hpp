@@ -181,7 +181,7 @@ public:
         declare_parameter("poseCovThreshold", 25.0);
         get_parameter("poseCovThreshold", poseCovThreshold);
 
-        declare_parameter("savePCD", false);
+        declare_parameter("savePCD", true);
         get_parameter("savePCD", savePCD);
         declare_parameter("savePCDDirectory", "/Downloads/LOAM/");
         get_parameter("savePCDDirectory", savePCDDirectory);
