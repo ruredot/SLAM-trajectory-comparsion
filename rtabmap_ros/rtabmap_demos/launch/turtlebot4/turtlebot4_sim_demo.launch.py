@@ -41,14 +41,14 @@ ARGUMENTS = [
 
 def generate_launch_description():
     # Directories
-    pkg_turtlebot4_ignition_bringup = get_package_share_directory(
-        'turtlebot4_ignition_bringup')
+    pkg_turtlebot4_gz_bringup = get_package_share_directory(
+        'turtlebot4_gz_bringup')
     pkg_rtabmap_demos = get_package_share_directory(
         'rtabmap_demos')
 
     # Paths
     ignition_launch = PathJoinSubstitution(
-        [pkg_turtlebot4_ignition_bringup, 'launch', 'turtlebot4_ignition.launch.py'])
+        [pkg_turtlebot4_gz_bringup, 'launch', 'turtlebot4_gz.launch.py'])
     rtabmap_launch = PathJoinSubstitution(
         [pkg_rtabmap_demos, 'launch', 'turtlebot4', 'turtlebot4_slam.launch.py'])
 
